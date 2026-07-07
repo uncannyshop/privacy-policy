@@ -16,37 +16,44 @@
         h1 { color: #111; }
         h2 { color: #222; margin-top: 30px; }
         p { margin: 10px 0; }
-        footer { margin-top: 50px; color: #888; font-size: 0.9em; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        footer { margin-top: 50px; color: #888; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> July 5, 2026</p>
+    <p><strong>Last updated:</strong> July 7, 2026</p>
+    <p>This Privacy Policy governs the data practices of the mobile application <strong>Player2 TV</strong>, developed and operated by <strong>Player2Apps</strong>.</p>
 
     <h2>Data Collection</h2>
-    <p>This app collects the following data solely for functionality purposes:</p>
+    <p>This app collects the following data solely for core functionality purposes:</p>
     <ul>
-        <li><strong>Android ID</strong> – Used to generate a unique device identifier for account management and connection limits. This is hashed and cannot be reversed.</li>
-        <li><strong>Account credentials</strong> (username/password) – Stored locally on your device to authenticate with your server. Never transmitted to third parties.</li>
+        <li><strong>Android ID</strong> – Used to generate a unique device identifier for account management, connection limits, and update checks. This is securely hashed using SHA-256 and cannot be reversed to expose the original ID.</li>
+        <li><strong>Account credentials</strong> (username and password) – Stored exclusively locally on your device to authenticate with your user-configured server. These are never transmitted to third parties or our infrastructure.</li>
+        <li><strong>APK version & device identifier</strong> – Transmitted to your user-configured server solely to check for available application updates.</li>
     </ul>
 
-    <h2>Data Storage</h2>
-    <p>All credentials are stored locally on your device using Android's built-in SharedPreferences. No data is transmitted to third parties or external servers except the server URL you configure.</p>
+    <h2>Data Storage & Retention</h2>
+    <p>All authentication credentials are stored locally on your device using Android's built-in SharedPreferences infrastructure. No data is transmitted to external servers or third parties except the custom server URL you manually input. Hashed device identifiers used for connection limitations are retained only as long as necessary to manage active server sessions or until an explicit deletion request is made.</p>
 
     <h2>Data Sharing</h2>
-    <p>We do not sell, trade, or share your personal data with third parties. Your data is only used to provide the core functionality of the app.</p>
+    <p>We do not sell, trade, rent, or share any personal data or device identifiers with third parties. Your data is used exclusively to facilitate the core functional operations of the application.</p>
 
     <h2>Security</h2>
-    <p>All network communication with your configured server uses HTTPS encryption where available. Device identifiers are hashed, not stored in plain text.</p>
+    <p>All network communication established with your manually configured server utilizes HTTPS encryption protocols where available. Device identifiers are strictly processed as cryptographic hashes and are not retained in plain text.</p>
 
-    <h2>Changes</h2>
-    <p>This policy may be updated occasionally. Changes will be posted here.</p>
+    <h2>User Rights & Data Deletion</h2>
+    <p>We respect your privacy and provide full control over your data. Because account credentials are saved entirely locally on your device, you can delete this data instantly at any time by clearing the application cache/data through your Android OS settings or by uninstalling the application. If you wish to request the deletion of any hashed hardware parameters stored on your server platform, please contact your respective server administrator or contact us directly at the email listed below.</p>
 
-    <h2>Contact</h2>
-    <p>If you have questions, contact: <a href="mailto:uncannyvapes@gmail.com">uncannyvapes@gmail.com</a></p>
+    <h2>Changes to This Policy</h2>
+    <p>This policy may be updated occasionally. Any amendments or updates will be published directly to this page.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions regarding this policy or data safety, you can contact us at: <a href="mailto:uncannyvapes@gmail.com">uncannyvapes@gmail.com</a></p>
 
     <footer>
-        <p>&copy; 2026 Player2TV. All rights reserved.</p>
+        <p>&copy; 2026 Player2Apps / Player2TV. All rights reserved.</p>
     </footer>
 </body>
 </html>
