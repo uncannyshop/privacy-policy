@@ -27,10 +27,11 @@
     <p><strong>Last updated:</strong> July 7, 2026</p>
     <p>This Privacy Policy governs the data practices of the mobile application <strong>Player2 TV</strong>, developed and operated by <strong>Player2Apps</strong>.</p>
 
-    <!-- Strictly a Player Disclaimer (IPTV references removed) -->
+    <!-- Strictly a Player & Payments Disclaimer -->
     <div class="disclaimer-box">
-        <h2>Important Content Disclaimer</h2>
+        <h2>Important Content & Service Disclaimer</h2>
         <p><strong>Player2 TV is strictly a media player utility.</strong> The application does not provide, host, include, sell, or lease any media content, digital streams, live channels, accounts, access credentials, or playlists. The app is entirely empty upon installation. Users are entirely responsible for providing their own legally acquired content streams or access credentials from their own user-configured servers.</p>
+        <p><strong>The application does not process payments, process in-app purchases, validate license keys, or provide any subscription services.</strong> All functionality is unlocked upon installation.</p>
     </div>
 
     <h2>Data Collection</h2>
@@ -38,8 +39,11 @@
     <ul>
         <li><strong>Android ID</strong> – Used to generate a unique device identifier for account management, connection limits, and update checks. This is securely hashed using SHA-256 and cannot be reversed to expose the original ID.</li>
         <li><strong>Account credentials</strong> (username and password) – Stored exclusively locally on your device to authenticate with your user-configured server. These are never transmitted to third parties or our infrastructure.</li>
-        <li><strong>APK version & device identifier</strong> – Transmitted to your user-configured server solely to check for available application updates.</li>
+        <li><strong>APK version number & hashed device identifier</strong> – Sent to the server you configure solely to check for available updates and manage concurrent device connections to your account.</li>
     </ul>
+
+    <h2>Third-Party SDKs and Libraries</h2>
+    <p>This application does not integrate any third-party analytics, advertising, or tracking SDKs. Your data is never shared with, tracked by, or exposed to external marketing or telemetry partners.</p>
 
     <h2>Data Storage & Retention</h2>
     <p>All authentication credentials are stored locally on your device using Android's built-in SharedPreferences infrastructure. No data is transmitted to external servers or third parties except the custom server URL you manually input. Hashed device identifiers used for connection limitations are retained only as long as necessary to manage active server sessions or until an explicit deletion request is made.</p>
