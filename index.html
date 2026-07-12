@@ -40,23 +40,27 @@
     <p>This Privacy Policy explains how <strong>Player2TV</strong>, developed and operated by <strong>Player2Apps</strong>, handles user data.</p>
 
     <div class="disclaimer-box">
-        <h2>Important Content & Service Disclaimer</h2>
-        <p><strong>Player2TV is strictly a media player utility.</strong> The app does not provide, host, include, sell, lease, or promote any media content, live channels, movies, series, playlists, accounts, access credentials, or streaming subscriptions.</p>
+        <h2>Important Content and Service Disclaimer</h2>
+        <p><strong>Player2TV is strictly a media player utility.</strong> The app does not provide, host, include, sell, lease, promote, or distribute any media content, live channels, movies, series, playlists, accounts, access credentials, or streaming subscriptions.</p>
         <p>The app is empty upon installation. Users must provide their own legally acquired playlist URLs or login credentials from their own chosen service providers or servers.</p>
         <p><strong>Player2TV does not process payments, in-app purchases, subscriptions, or license-key purchases inside the app.</strong></p>
     </div>
 
+    <h2>No Account Creation</h2>
+    <p>Player2TV does not allow users to create an account with Player2Apps. The app does not provide user registration, email/password sign-up, social login, or user profile accounts.</p>
+    <p>If the user uses Backup/Restore, the app generates an anonymous restore code. This restore code is used only to recover backup data and does not create a Player2Apps user account.</p>
+
     <h2>Data We Collect and Use</h2>
-    <p>Player2TV collects and uses limited data only for core app functionality, playback, account connection, app security, backup/restore, and service reliability.</p>
+    <p>Player2TV collects and uses limited data only for core app functionality, playback, app security, backup/restore, and service reliability.</p>
 
     <ul>
-        <li><strong>Playlist information</strong> such as playlist URL, server URL, playlist name, and playlist type. This is used to load the user’s own configured media source.</li>
-        <li><strong>Account credentials</strong> such as username and password when the user enters Xtream Codes or M3U login details. These credentials are stored locally on the device and are used only to connect to the server selected by the user.</li>
-        <li><strong>Hashed Android ID</strong> used to generate or maintain a stable device identifier for app security, account connection management, backup/restore, and device recognition. The Android ID is hashed using SHA-256 before being sent to our server.</li>
-        <li><strong>App version, package name, APK hash, and app integrity data</strong> used to verify that the app version is supported and to protect the service against tampered or outdated builds.</li>
-        <li><strong>Device/session status data</strong> such as online status, recent heartbeat time, app version, IP address, and device identifier. This is used to show active app sessions, prevent abuse, and support connection management.</li>
-        <li><strong>Backup data</strong> when the user chooses to use Backup/Restore. Backup may include saved playlists, playlist names, server URLs, usernames, passwords, hidden/favorite channel settings, category order, app preferences, and other restorable settings. Backup is user-initiated and used only to restore settings on the same or another device.</li>
-        <li><strong>Playback and app preferences</strong> such as favorites, hidden channels/categories, subtitle settings, stream format preference, EPG settings, data saver preference, recent items, and layout preferences. These are stored locally unless included in a user-created backup.</li>
+        <li><strong>Playlist information</strong>, such as playlist URL, server URL, playlist name, and playlist type. This is used to load the user’s own configured media source.</li>
+        <li><strong>Account credentials</strong>, such as username and password, when the user enters Xtream Codes or M3U login details. These credentials are stored locally on the device and are used to connect to the server selected by the user. If the user chooses Backup/Restore, saved playlist credentials may be included in the backup so they can be restored on another device.</li>
+        <li><strong>Hashed Android ID</strong>, used to generate or maintain a stable device identifier for app security, backup/restore, device recognition, and connection management. The Android ID is hashed using SHA-256 before being sent to Player2Apps servers.</li>
+        <li><strong>App version, package name, APK hash, and app integrity data</strong>, used to verify that the app version is supported and to protect the service against tampered or outdated builds.</li>
+        <li><strong>Device/session status data</strong>, such as online status, recent heartbeat time, app version, IP address, and device identifier. IP address may be processed and temporarily stored in server logs or session records to establish connections, prevent abuse, and support connection management.</li>
+        <li><strong>Backup data</strong>, when the user chooses to use Backup/Restore. Backup may include saved playlists, playlist names, server URLs, usernames, passwords, hidden/favorite channel settings, category order, app preferences, and other restorable settings. Backup is user-initiated and used only to restore settings on the same or another device.</li>
+        <li><strong>Playback and app preferences</strong>, such as favorites, hidden channels/categories, subtitle settings, stream format preference, EPG settings, data saver preference, recent items, and layout preferences. These are stored locally unless included in a user-created backup.</li>
     </ul>
 
     <h2>How Data Is Used</h2>
@@ -70,13 +74,14 @@
         <li>Displaying active device/session status.</li>
         <li>Improving app reliability, caching, and playback performance.</li>
         <li>Managing feature availability returned by the server.</li>
+        <li>Preventing abuse and protecting app functionality.</li>
     </ul>
 
     <h2>Background Data Use</h2>
     <p>Player2TV may perform limited background work, such as refreshing cached playlist data or maintaining app data needed for faster loading. Background activity is limited to app functionality and is not used for advertising, tracking, or profiling.</p>
 
     <h2>Backup and Restore</h2>
-    <p>Backup/Restore is optional and user-initiated. When the user creates a backup, Player2TV sends backup data to our server and returns a restore code. The restore code can be used to recover saved settings and playlists on another device.</p>
+    <p>Backup/Restore is optional and user-initiated. When the user creates a backup, Player2TV sends backup data to Player2Apps servers and returns an anonymous restore code. The restore code can be used to recover saved settings and playlists on another device.</p>
     <p>Backup data is retained only as long as necessary to provide restore functionality and may expire automatically. Users may request deletion of backup data by contacting us.</p>
 
     <h2>Third-Party Servers and User-Configured Services</h2>
@@ -97,15 +102,16 @@
 
     <h2>Data Storage and Retention</h2>
     <p>Most app settings and playlist information are stored locally on the user’s device using Android storage mechanisms such as SharedPreferences and local databases.</p>
-    <p>Server-side app session records, hashed device identifiers, and backup records are retained only as long as needed for app functionality, security, abuse prevention, restore support, or legal compliance.</p>
+    <p>Server-side app session records, hashed device identifiers, IP logs, and backup records are retained only as long as needed for app functionality, security, abuse prevention, restore support, or legal compliance.</p>
 
     <h2>Security</h2>
-    <p>Player2TV uses HTTPS where supported. Some user-provided playlists or streams may use HTTP if the user’s selected provider only supports HTTP. Device identifiers are processed as hashes where applicable.</p>
+    <p>Player2TV uses industry-standard encryption such as HTTPS to secure data transmitted between the app and Player2Apps servers where supported.</p>
+    <p>Some user-provided playlists or streams may use HTTP if the user’s selected provider only supports HTTP. Device identifiers are processed as hashes where applicable.</p>
     <p>Users should only enter playlist URLs and account credentials from sources they trust and are authorized to use.</p>
 
     <h2>User Control and Data Deletion</h2>
     <p>Users can delete locally stored app data at any time by clearing app data in Android settings or uninstalling the app.</p>
-    <p>To request deletion of backup data, hashed device identifiers, or server-side session records stored by Player2Apps, contact us using the email below. If the data belongs to a third-party server configured by the user, the user should contact that third-party server provider directly.</p>
+    <p>To request deletion of backup data, hashed device identifiers, IP/session records, or other server-side records stored by Player2Apps, contact us using the email below. If the data belongs to a third-party server configured by the user, the user should contact that third-party server provider directly.</p>
 
     <h2>Children</h2>
     <p>Player2TV is not directed to children and does not knowingly collect personal data from children. Users are responsible for ensuring that any playlist or media source they add is appropriate and legally permitted.</p>
