@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 700px;
+            max-width: 760px;
             margin: 0 auto;
             padding: 40px 20px;
             color: #333;
@@ -18,51 +18,103 @@
         p { margin: 10px 0; }
         ul { padding-left: 20px; }
         li { margin-bottom: 8px; }
-        .disclaimer-box { background-color: #f9f9f9; border-left: 4px solid #cc0000; padding: 15px; margin: 20px 0; }
-        footer { margin-top: 50px; color: #888; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 20px; }
+        .disclaimer-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #cc0000;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        footer {
+            margin-top: 50px;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> July 7, 2026</p>
-    <p>This Privacy Policy governs the data practices of the mobile application <strong>Player2 TV</strong>, developed and operated by <strong>Player2Apps</strong>.</p>
+    <p><strong>Last updated:</strong> July 13, 2026</p>
 
-    <!-- Strictly a Player & Payments Disclaimer -->
+    <p>This Privacy Policy explains how <strong>Player2TV</strong>, developed and operated by <strong>Player2Apps</strong>, handles user data.</p>
+
     <div class="disclaimer-box">
         <h2>Important Content & Service Disclaimer</h2>
-        <p><strong>Player2 TV is strictly a media player utility.</strong> The application does not provide, host, include, sell, or lease any media content, digital streams, live channels, accounts, access credentials, or playlists. The app is entirely empty upon installation. Users are entirely responsible for providing their own legally acquired content streams or access credentials from their own user-configured servers.</p>
-        <p><strong>The application does not process payments, process in-app purchases, validate license keys, or provide any subscription services.</strong> All functionality is unlocked upon installation.</p>
+        <p><strong>Player2TV is strictly a media player utility.</strong> The app does not provide, host, include, sell, lease, or promote any media content, live channels, movies, series, playlists, accounts, access credentials, or streaming subscriptions.</p>
+        <p>The app is empty upon installation. Users must provide their own legally acquired playlist URLs or login credentials from their own chosen service providers or servers.</p>
+        <p><strong>Player2TV does not process payments, in-app purchases, subscriptions, or license-key purchases inside the app.</strong></p>
     </div>
 
-    <h2>Data Collection</h2>
-    <p>This app collects the following data solely for core functionality purposes:</p>
+    <h2>Data We Collect and Use</h2>
+    <p>Player2TV collects and uses limited data only for core app functionality, playback, account connection, app security, backup/restore, and service reliability.</p>
+
     <ul>
-        <li><strong>Android ID</strong> – Used to generate a unique device identifier for account management, connection limits, and update checks. This is securely hashed using SHA-256 and cannot be reversed to expose the original ID.</li>
-        <li><strong>Account credentials</strong> (username and password) – Stored exclusively locally on your device to authenticate with your user-configured server. These are never transmitted to third parties or our infrastructure.</li>
-        <li><strong>APK version number & hashed device identifier</strong> – Sent to the server you configure solely to check for available updates and manage concurrent device connections to your account.</li>
+        <li><strong>Playlist information</strong> such as playlist URL, server URL, playlist name, and playlist type. This is used to load the user’s own configured media source.</li>
+        <li><strong>Account credentials</strong> such as username and password when the user enters Xtream Codes or M3U login details. These credentials are stored locally on the device and are used only to connect to the server selected by the user.</li>
+        <li><strong>Hashed Android ID</strong> used to generate or maintain a stable device identifier for app security, account connection management, backup/restore, and device recognition. The Android ID is hashed using SHA-256 before being sent to our server.</li>
+        <li><strong>App version, package name, APK hash, and app integrity data</strong> used to verify that the app version is supported and to protect the service against tampered or outdated builds.</li>
+        <li><strong>Device/session status data</strong> such as online status, recent heartbeat time, app version, IP address, and device identifier. This is used to show active app sessions, prevent abuse, and support connection management.</li>
+        <li><strong>Backup data</strong> when the user chooses to use Backup/Restore. Backup may include saved playlists, playlist names, server URLs, usernames, passwords, hidden/favorite channel settings, category order, app preferences, and other restorable settings. Backup is user-initiated and used only to restore settings on the same or another device.</li>
+        <li><strong>Playback and app preferences</strong> such as favorites, hidden channels/categories, subtitle settings, stream format preference, EPG settings, data saver preference, recent items, and layout preferences. These are stored locally unless included in a user-created backup.</li>
     </ul>
-    <p><strong>This application does not collect, transmit, or process any data while running in the background or when not actively in use.</strong> All data handling occurs entirely during active, foreground user interaction.</p>
+
+    <h2>How Data Is Used</h2>
+    <p>Collected data is used only for the following purposes:</p>
+    <ul>
+        <li>Loading playlists and media sources configured by the user.</li>
+        <li>Authenticating with servers entered by the user.</li>
+        <li>Maintaining saved playlists and app settings.</li>
+        <li>Providing backup and restore functionality when requested by the user.</li>
+        <li>Checking app version and app integrity.</li>
+        <li>Displaying active device/session status.</li>
+        <li>Improving app reliability, caching, and playback performance.</li>
+        <li>Managing feature availability returned by the server.</li>
+    </ul>
+
+    <h2>Background Data Use</h2>
+    <p>Player2TV may perform limited background work, such as refreshing cached playlist data or maintaining app data needed for faster loading. Background activity is limited to app functionality and is not used for advertising, tracking, or profiling.</p>
+
+    <h2>Backup and Restore</h2>
+    <p>Backup/Restore is optional and user-initiated. When the user creates a backup, Player2TV sends backup data to our server and returns a restore code. The restore code can be used to recover saved settings and playlists on another device.</p>
+    <p>Backup data is retained only as long as necessary to provide restore functionality and may expire automatically. Users may request deletion of backup data by contacting us.</p>
+
+    <h2>Third-Party Servers and User-Configured Services</h2>
+    <p>Player2TV allows users to connect to servers, playlist URLs, and media sources that they provide themselves. When users enter a third-party server URL or playlist, the app sends the required requests directly to that server to load channels, movies, series, EPG data, and playback streams.</p>
+    <p>Player2Apps is not responsible for the privacy practices, availability, content, or legality of third-party servers configured by users.</p>
 
     <h2>Third-Party SDKs and Libraries</h2>
-    <p>This application does not integrate any third-party analytics, advertising, or tracking SDKs. Your data is never shared with, tracked by, or exposed to external marketing or telemetry partners.</p>
-
-    <h2>Data Storage & Retention</h2>
-    <p>All authentication credentials are stored locally on your device using Android's built-in SharedPreferences infrastructure. No data is transmitted to external servers or third parties except the custom server URL you manually input. Hashed device identifiers used for connection limitations are retained only as long as necessary to manage active server sessions or until an explicit deletion request is made.</p>
+    <p>Player2TV does not include third-party advertising SDKs, analytics SDKs, or tracking SDKs. The app does not use your data for advertising or marketing profiling.</p>
 
     <h2>Data Sharing</h2>
-    <p>We do not sell, trade, rent, or share any personal data or device identifiers with third parties. Your data is used exclusively to facilitate the core functional operations of the application.</p>
+    <p>We do not sell, rent, trade, or share personal data with advertisers or data brokers.</p>
+    <p>Data may be sent only to:</p>
+    <ul>
+        <li>The server or playlist URL manually configured by the user.</li>
+        <li>Player2Apps servers for app integrity checks, online session status, feature availability, and optional backup/restore.</li>
+        <li>Service providers only when necessary to operate hosting, security, or backup functionality.</li>
+    </ul>
+
+    <h2>Data Storage and Retention</h2>
+    <p>Most app settings and playlist information are stored locally on the user’s device using Android storage mechanisms such as SharedPreferences and local databases.</p>
+    <p>Server-side app session records, hashed device identifiers, and backup records are retained only as long as needed for app functionality, security, abuse prevention, restore support, or legal compliance.</p>
 
     <h2>Security</h2>
-    <p>All network communication established with your manually configured server utilizes HTTPS encryption protocols where available. Device identifiers are strictly processed as cryptographic hashes and are not retained in plain text.</p>
+    <p>Player2TV uses HTTPS where supported. Some user-provided playlists or streams may use HTTP if the user’s selected provider only supports HTTP. Device identifiers are processed as hashes where applicable.</p>
+    <p>Users should only enter playlist URLs and account credentials from sources they trust and are authorized to use.</p>
 
-    <h2>User Rights & Data Deletion</h2>
-    <p>We respect your privacy and provide full control over your data. Because account credentials are saved entirely locally on your device, you can delete this data instantly at any time by clearing the application cache/data through your Android OS settings or by uninstalling the application. If you wish to request the deletion of any hashed hardware parameters stored on your server platform, please contact your respective server administrator or contact us directly at the email listed below.</p>
+    <h2>User Control and Data Deletion</h2>
+    <p>Users can delete locally stored app data at any time by clearing app data in Android settings or uninstalling the app.</p>
+    <p>To request deletion of backup data, hashed device identifiers, or server-side session records stored by Player2Apps, contact us using the email below. If the data belongs to a third-party server configured by the user, the user should contact that third-party server provider directly.</p>
+
+    <h2>Children</h2>
+    <p>Player2TV is not directed to children and does not knowingly collect personal data from children. Users are responsible for ensuring that any playlist or media source they add is appropriate and legally permitted.</p>
 
     <h2>Changes to This Policy</h2>
-    <p>This policy may be updated occasionally. Any amendments or updates will be published directly to this page.</p>
+    <p>We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised “Last updated” date.</p>
 
     <h2>Contact Us</h2>
-    <p>If you have any questions regarding this policy or data safety, you can contact us at: <a href="mailto:player2apps2026@gmail.com">player2apps2026@gmail.com</a></p>
+    <p>If you have questions about this Privacy Policy or wish to request data deletion, contact us at: <a href="mailto:player2apps2026@gmail.com">player2apps2026@gmail.com</a></p>
 
     <footer>
         <p>&copy; 2026 Player2Apps / Player2TV. All rights reserved.</p>
